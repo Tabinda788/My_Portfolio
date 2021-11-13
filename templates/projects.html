@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% load static %}
+{% block projectsactive %}active{% endblock projectsactive %}
+{% block title %}Projects{% endblock title%}
+
+{% block body %}
+    <div class="container my-3">
+        <h2 class="text-center my-3 py-3">My Projects</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="static/img/diabetes.jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Diabetes Disease Classification using Machine Learning</h5>
+                        <p class="card-text">This projects aims to predict whether a person is diabetic or not via
+                            six different classification algorithms namely Support Vector Machine(SVC), K- Nearest Neighbour(Knn), Decision Tree, Naive Bayes, Logistic Regression and Random Forest. Moreover, early
+                            prediction of the diabetes disease with a higher accuracy can be
+                            found using various machine learning techniques.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="static/img/mushroom.jpeg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Machine Learning web App with Streamlit and Python</h5>
+                        <p class="card-text">The project aims at building a machine learning web app that allows any user to interactively choose a classification algorithm such as SVM, Logistic Regression etc. and set their own values for hyper parameter settings where they can modify the regularization parameter, evaluation metrics. Results are dynamically displayed on
+                            the web page in real time.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="static/img/income.png"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Income classifier system</h5>
+                        <p class="card-text">Simplify the data system by reducing number of variables to be
+                            studied, without sacrificing too much of accuracy. Such a system
+                            would help subsidy Inc. in planning subsidy outlays, monitoring and
+                            preventing misuse.</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="static/img/car.jpeg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Car price prediction</h5>
+                        <p class="card-text">Storm motors wishes to develop an algorithm to predict price of cars</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        {% endblock body %}
