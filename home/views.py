@@ -18,16 +18,31 @@ def experience(request):
     return render(request, "experience.html")
 
 def contact(request):
-    # return HttpResponse("This is my contactpage (/contact)")
-    if request.method=="POST":   
-        name = request.POST['name']
-        email = request.POST['email']
-        phone = request.POST['phone']
-        desc = request.POST['desc']
-        # print(name,email,phone,desc)
-        contact = Contact(name=name, email=email,phone=phone, desc=desc)
-        contact.save()
-        print("The data has been saved to the db")
+    return render(request, "contact.html")
 
-    return render(request,'contact.html')
+# def contact(request):
+#     # return HttpResponse("This is my contactpage (/contact)")
+#     if request.method=="POST":   
+#         name = request.POST['name']
+#         email = request.POST['email']
+#         phone = request.POST['phone']
+#         desc = request.POST['desc']
+#         # print(name,email,phone,desc)
+#         contact = Contact(name=name, email=email,phone=phone, desc=desc)
+#         contact.save()
+#         print("The data has been saved to the db")
+
+#     return render(request,'contact.html')
+
+
+def success(request):
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        phone = request.POST.get('phone')
+        desc = request.POST.get('desc')
+        contact_info = Contact(name=name, email=email, phone=phone, desc=desc)
+        contact_info.save()
+        print("The data has been written to the DB")
+    return render(request, "success.html")
 

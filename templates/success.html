@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block contactactive %}active{% endblock contactactive %}
+{% block title %}Contact mee{% endblock title %}
+
+{% block body %}
+    <div class="container"><br/><br/><br/><br/>
+
+          <div class="alert alert-warning alert-dismissible  " role="alert">
+              <strong class="alert-heading">Your Response have been recorded!</strong>
+              <hr>
+              <p>Thank You for showing interest in my profile.</p>
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+
+           <div class="col-sm">
+                 <a href="/" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Go back to Home</a>
+            </div>
+
+    </div>
+
+{% endblock body %}
